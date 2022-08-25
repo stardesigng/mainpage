@@ -1,0 +1,214 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+	font-family: 'fontawesome';
+	src:url('../fonts/fontawesome.eot');
+	src:url('../fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/fontawesome.svg#fontawesome') format('svg'),
+		url('../fonts/fontawesome.woff') format('woff'),
+		url('../fonts/fontawesome.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body, html { width: 100%; font-size: 100%; 	padding: 0; margin: 0;}
+
+/* Reset */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    background-color: #151515;
+}
+
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 100%;
+	padding: 25px 0;
+	text-align: center;
+}
+
+.wrapper {
+	color: #ffffff;
+}
+
+.akhwan-logo {
+	display: inline-block;
+	width: 210px;
+	height: 30px;
+}
+
+.grid {
+	padding: 0;
+	list-style: none;
+	position: relative;
+	width: 100%;
+}
+
+.grid li {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 16.6666667%; /* Fallback */
+	width: -webkit-calc(100% / 4);
+	width: calc(100% / 4);
+}
+
+.grid li a,
+.grid li a img {
+	display: block;
+	width: 100%;
+	cursor: pointer;
+}
+
+.grid li a img {
+	max-width: 100%;
+}
+
+.grid li :hover {
+	transform: scale(1.1);
+}
+
+/* Flexbox is used for centering the heading */
+.grid li a div {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: rgba(5,5,5,0.6);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+}
+
+.grid li a div h3 {
+	width: 100%;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	letter-spacing: 2px;
+	padding: 0 10px;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	padding: 70px 0;
+}
+
+footer h4 {
+	font-size: .95em;
+	letter-spacing: 4px;
+}
+
+footer ul li {
+	display: inline;
+	margin: 0 15px;
+}
+
+footer ul li a {
+	font-weight: 900;
+	font-size: 2.5em;
+	transition: 0.5s;
+}
+
+footer span {
+	display: inline-block;
+	margin: 50px 0;
+}
+
+.facebook:hover {
+	color: #004B9C;
+}
+
+.instagram:hover {
+	color: #D41A57;
+}
+
+.gmail:hover {
+	color: #DD4437;
+}
+.dribbble:hover {
+	color: #E91E63; 
+}
+
+.whatsapp:hover {
+	color: #075E54;
+}
+
+@media screen and (max-width: 1190px) {
+	.grid li {
+		width: 20%; /* Fallback */
+		width: -webkit-calc(100% / 4);
+		width: calc(100% / 4);
+	}
+}
+
+@media screen and (max-width: 945px) {
+	.grid li {
+		width: 25%; /* Fallback */
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.grid li {
+		width: 33.3333333%; /* Fallback */
+		width: -webkit-calc(100% / 2);
+		width: calc(100% / 2);
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.grid li {
+		width: 50%; /* Fallback */
+		width: -webkit-calc(100% / 1);
+		width: calc(100% / 1);
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.grid li {
+		width: 100%;
+	}
+}
